@@ -1,0 +1,7 @@
+name: ResAddon-LimitBuild
+main: cn.moci.share.limitbuild.Main
+version: 1.0.0 - SNAPSHOT
+author: Moci
+depend: [Residence]
+commands:
+    limitbuild:

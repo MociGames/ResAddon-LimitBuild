@@ -1,0 +1,31 @@
+#启用的世界名
+worlds:
+        - world
+
+permission: 
+        #有这个权限的玩家可以无视领地权限来建造 建议给建筑师等
+        pass: moci.limit.pass  
+        #使用/limitbuild reload 的权限 无权限不会有任何提示！
+        command: moci.admin
+
+#需要屏蔽的事件
+Settings:
+        #下面两个分别是方块破坏和放置
+        BlockBreakEvent: true
+        BlockPlaceEvent: true
+        
+        EntityDamageByEntityEvent:
+                #这个设置为false指允许玩家在领地内打怪物
+                Monsters: false 
+                #除了怪物还剩啥不需要我说了吧？
+                Others: true
+        #玩家交互事件是指的踩田 
+        PlayerInteractEvent: true
+        #实体交互事件是指的踩田 
+        EntityInteractEvent: true
+        #下面两个是收水放水
+        PlayerBucketFillEvent: true
+        PlayerBucketEmptyEvent: true
+
+#提示的消息
+msg: "&7您只能在自己的领地内破坏！"
